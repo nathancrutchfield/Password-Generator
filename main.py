@@ -15,9 +15,9 @@ randomLet = random.sample(letters, nr_letters)
 randomSym = random.sample(symbols, nr_symbols)
 randomNum = random.sample(numbers, nr_numbers)
 password = randomLet + randomSym + randomNum
-print(password)
+print(f'Here is your password: {password}')
 
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
 random.shuffle(password)
-print(password)
+print(f'Here is your randomised password: {password}')
